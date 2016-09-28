@@ -1,0 +1,16 @@
+{
+    "name": "FilePackage",
+    "description": "upload or download files",
+    "authors": [
+        {
+            "name": "BurgessChen",
+            "email": "loveshe76119@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "FilePackage\\":"src/"
+      }
+    }
+}

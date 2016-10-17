@@ -1,8 +1,14 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "burgess1109/file_package",
+    "description": "upload or download files",
+    "keywords": ["upload", "download","sftp","laravel"],
     "license": "MIT",
+    "authors": [
+      {
+        "name": "BurgessChen",
+        "email": "loveshe76119@gmail.com"
+      }
+    ],
     "type": "project",
     "require": {
         "php": ">=5.5.9",

@@ -55,42 +55,42 @@ config/filesystems.php 'disks'內增加ftp disk, 讓Storage支援FTP
 
 1. 取得檔案列表
 
-$directory='路徑';
+ $directory='路徑';
 
-$FilePackages = new FilePackages($directory);
+ $FilePackages = new FilePackages($directory);
 
-$files = $FilePackages->getfiles();
+ $files = $FilePackages->getfiles();
 
 2. 取得檔案下載
 
-$directory='路徑';
+ $directory='路徑';
 
-$FilePackages = new FilePackages($directory);
+ $FilePackages = new FilePackages($directory);
 
-FilePackages->getResponse('download',實際檔名,顯示名稱);
+ FilePackages->getResponse('download',實際檔名,顯示名稱);
 
 3. 上傳檔案
 
-$directory='路徑';
+ $directory='路徑';
 
-$FilePackages = new FilePackages($directory);
+ $FilePackages = new FilePackages($directory);
 
-$result=$FilePackages->uploadFile($upload_file);
+ $result=$FilePackages->uploadFile($upload_file);
 
 4. 刪除檔案
 
-$directory='路徑';
+ $directory='路徑';
 
-$FilePackages = new FilePackages($directory);
+ $FilePackages = new FilePackages($directory);
 
-$result=$FilePackages->deleteFile(實際檔名);
+ $result=$FilePackages->deleteFile(實際檔名);
 
 5. 刪除資料夾
 
-$directory='路徑';
+ $directory='路徑';
 
-$FilePackages = new FilePackages($directory);
+ $FilePackages = new FilePackages($directory);
 
-$result = $FilePackages->deleteFloder(資料夾名稱);
+ $result = $FilePackages->deleteFloder(資料夾名稱);
 
 

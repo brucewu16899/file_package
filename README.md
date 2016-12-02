@@ -25,8 +25,11 @@ FILE_PASSWORD：file server 密碼
 
 FILE_ROOT：上傳目錄
 
-config/filesystems.php 'disks'內增加ftp disk, 讓Storage支援FTP
-
+config/filesystems.php 
+ 1.修正default參數,讓其撈取環境參數
+ 'default' => env('FILE_SERVER', 'local'),
+ 
+ 2.'disks'內增加ftp disk, 讓Storage支援FTP
  'ftp' => [
             
             'driver'   => 'ftp',

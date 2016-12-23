@@ -40,7 +40,7 @@
 ##常見問題
 1. phpize錯誤訊息: Can't find pgp headwrs in /usr/include/php ....
 
-    A:缺少php-devel, 請依PHP版本安裝php-devel
+    Answer :缺少php-devel, 請依PHP版本安裝php-devel
 
     PHP5.3,PHP5.4 : yum install php-devel
 
@@ -51,7 +51,7 @@
 
 2. PHP版本衝突 : Error: php56w-common conflicts with php-common-5.3.3-48.el6_8.x86_64
 
-    A: 移除舊版本(下列範例為移除PHP5.3)
+    Answer : 移除舊版本(下列範例為移除PHP5.3)
 
     yum remove php-common-5.3.3-48.el6_8.x86_64 
     

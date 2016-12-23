@@ -2,7 +2,7 @@
 
 1. 安裝 openssl openssl-devel
 
-    yum install openssl openssl-devel
+    $ yum install openssl openssl-devel
 
 2. 安裝libssh2
     

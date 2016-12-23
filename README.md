@@ -9,7 +9,7 @@
 
 2. 至 config/app.php 'providers'內加入 FilePackages\FilePackagesServiceProvider::class,
 
-## 務必確認server已安裝ssh2套件 ([安裝方式](https://github.com/burgess1109/file_package/edit/master/ssh2.md))
+## 務必確認server已安裝ssh2套件 ([SSH安裝方式](https://github.com/burgess1109/file_package/edit/master/ssh2.md))
 
 
 # 環境參數(.env)

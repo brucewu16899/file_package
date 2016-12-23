@@ -51,7 +51,7 @@
 
 2. PHP版本衝突 : Error: php56w-common conflicts with php-common-5.3.3-48.el6_8.x86_64
 
-A: 移除舊版本(下列範例為移除PHP5.3)
+    A: 移除舊版本(下列範例為移除PHP5.3)
 
     yum remove php-common-5.3.3-48.el6_8.x86_64 
     

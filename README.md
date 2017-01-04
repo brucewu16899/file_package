@@ -75,8 +75,18 @@ config/filesystems.php
  $FilePackages = new FilePackages($directory);
 
  FilePackages->getResponse('download',實際檔名,顯示名稱);
+ 
+3. 取得圖片或影片顯示
 
-3. 上傳檔案
+ $directory='路徑';
+
+ $FilePackages = new FilePackages($directory);
+
+ $FilePackages->getResponse('jpg',實際檔名,顯示名稱); //顯示圖片
+ 
+ $FilePackages->getResponse('video',實際檔名,顯示名稱); //顯示影片
+ 
+4. 上傳檔案
 
  $directory='路徑';
 
@@ -84,7 +94,7 @@ config/filesystems.php
 
  $result=$FilePackages->uploadFile($upload_file);
 
-4. 刪除檔案
+5. 刪除檔案
 
  $directory='路徑';
 
@@ -92,7 +102,7 @@ config/filesystems.php
 
  $result=$FilePackages->deleteFile(實際檔名);
 
-5. 刪除資料夾
+6. 刪除資料夾
 
  $directory='路徑';
 

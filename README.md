@@ -20,6 +20,8 @@ FILE_CONNECT：連線方式(sftp or ftp or local)
 
 FILE_HOST：file server IP
 
+FILE_PORT : file server port 
+
 FILE_USERNAME：file server 帳號
 
 FILE_PASSWORD：file server 密碼
@@ -66,33 +68,31 @@ config/filesystems.php
 
  $FilePackages = new FilePackages($directory);
 
- $files = $FilePackages->getfiles();
+ $files = $FilePackages->getList();
 
-2. 取得檔案下載
+2. 取得檔案
 
- $directory='路徑';
-
- $FilePackages = new FilePackages($directory);
-
- FilePackages->getResponse('download',實際檔名,顯示名稱);
- 
-3. 取得圖片或影片顯示
-
- $directory='路徑';
+ $directory='<路徑>';
 
  $FilePackages = new FilePackages($directory);
 
- $FilePackages->getResponse('jpg',實際檔名,顯示名稱); //顯示圖片
+ $FilePackages->return_type='download';//回傳類別, 直接下載:download 圖片:jpg 影片:video
+       
+ $FilePackages->file_name=<實際檔名>;
+        
+ $FilePackages->show_name=<檔案顯示名稱>;
  
- $FilePackages->getResponse('video',實際檔名,顯示名稱); //顯示影片
+ return $FilePackages->getFile();
  
-4. 上傳檔案
+3. 上傳檔案
 
- $directory='路徑';
+ $directory='<路徑>';
 
  $FilePackages = new FilePackages($directory);
-
- $result=$FilePackages->uploadFile($upload_file);
+ 
+ $FilePackages->request_file=<檔案上傳request>;
+ 
+ $result=$FilePackages->postFile();
 
 5. 刪除檔案
 
@@ -100,7 +100,9 @@ config/filesystems.php
 
  $FilePackages = new FilePackages($directory);
 
- $result=$FilePackages->deleteFile(實際檔名);
+ $FilePackages->file_name='<刪除的實際檔名>';
+ 
+ $result=$FilePackages->deleteFile();
 
 6. 刪除資料夾
 
@@ -108,6 +110,8 @@ config/filesystems.php
 
  $FilePackages = new FilePackages($directory);
 
- $result = $FilePackages->deleteFloder(資料夾名稱);
+ $FilePackages->floder='<資料夾名稱>';
+ 
+ $result = $FilePackages->deleteFloder();
 
 

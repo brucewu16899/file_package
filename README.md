@@ -28,7 +28,7 @@ FILE_PASSWORD：file server 密碼
 
 FILE_ROOT：上傳目錄
 
-config/filesystems.php 
+# filesystems(config/filesystems.php )
 
  1.修正default參數,讓其撈取環境參數
  

@@ -123,7 +123,7 @@ class SFTPConnection
         }
     }
 
-    public function deleteFile($remote_file)
+    public function deleteFiles($remote_file)
     {
         $sftp = $this->sftp;
         return ssh2_sftp_unlink($sftp, $remote_file);

@@ -11,10 +11,11 @@
 |
 */
 
-//ÀÉ®×´ú¸Õ­¶­±
 Route::get('file', 'FilePackages\FileController@index');
 Route::get('file/download', 'FilePackages\FileController@getDownload');
 Route::post('file/upload', 'FilePackages\FileController@postUpload');
 Route::post('file/delete', 'FilePackages\FileController@postDelete');
 Route::post('file/deletefloder', 'FilePackages\FileController@postDeletefloder');
+
+Route::get('/', 'FilePackages\FileController@index');
 

@@ -10,6 +10,18 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+/*
+Route::get('game',function(){
+    return view('game.game');
+});
+*/
+Route::get('game', 'GameController@index');
+Route::post('game/grid', 'GameController@grid');
+Route::get('game/grid', 'GameController@grid');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+

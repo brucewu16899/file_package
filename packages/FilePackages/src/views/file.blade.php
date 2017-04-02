@@ -48,7 +48,7 @@
                         </div>
                     @endif
                     @foreach($show_name as $key=>$val)
-                        <p><a href="{{asset('file/download?id=').$key}}">{{$val}}</a>　|  <button type="button" onclick="del({{$key}})">刪除</button></p>
+                        <p><a href="{{asset('file/download?id=').$key}}" target="_blank">{{$val}}</a>　|  <button type="button" onclick="del({{$key}})">刪除</button></p>
                     @endforeach
                 </div>
                 <div>
